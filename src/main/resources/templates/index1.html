@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/index_style.css}">
+    <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet"
+          integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="shortcut icon" th:href="@{/img/logo.png}" type="image/x-icon">
+    <title>Интернет магазин</title>
+    <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet">
+</head>
+<body>
+<div class="general_div">
+    <nav class="navbar navbar-expand-md" style="background-color: #e3f2fd;" aria-label="Fourth navbar example">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04"
+                    aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarsExample04">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/auth/index1">Главная страница</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/product">Каталог товаров</a>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/auth/about">О нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/auth/login">Авторизация</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container col-xxl-14 px-12 py-8">
+        <div class="row flex-lg-row align-items-center justify-content-center g-5 py-5">
+            <div class="col-lg-6">
+                <h1 class="display-5 fw-bold lh-1 mb-3">Игровой интернет магазин</h1>
+                <p class="lead">У нас вы можете приобрести последние новинки игровой техники. Мы  гарантируем качество товаров. Быструю доставку и помощь с установкой!</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-24 col-sm-18 col-lg-12">
+        <div class="image" id="firstEl">
+            <div class="slide">
+                <input type="radio" name="box" id="png1" checked>
+                <input type="radio" name="box" id="png2">
+                <input type="radio" name="box" id="png3">
+                <div class="box">
+                    <label for="png1"></label>
+                    <label for="png2"></label>
+                    <label for="png3"></label>
+                </div>
+                <div class="slider-img">
+                    <div class="img-container">
+                        <img th:src="@{/img/ps5.png}" alt="1">
+                        <img th:src="@{/img/video.jpeg}" alt="2">
+                        <img th:src="@{/img/monitor.png}" alt="3">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+	<div class="b-example-divider"></div>
+</div>
+<script th:src="@{/js/bootstrap.bundle.min.js}"></script>
+<script th:src="@{/js/script.js}"></script>
+</body>
+</html>
