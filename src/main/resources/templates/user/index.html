@@ -12,7 +12,7 @@
     <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet">
 </head>
 <body>
-<div class="general_div">
+<div class="general_div text-white">
     <nav class="navbar navbar-expand-md" style="background-color: #e3f2fd;"  aria-label="Fourth navbar example">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"></a>
@@ -29,7 +29,7 @@
                         <a class="nav-link" href="/product">Каталог товаров</a>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="/auth/about">Новости</a>
+                        <a class="nav-link" href="/auth/about">О нас</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/auth/login">Авторизация</a>
@@ -77,14 +77,19 @@
                 <br>
                 <hr>
                 <p>Категория товаров</p>
-                <input type="radio" id="furniture" name="category" value="furniture">
-                <label for="furniture">Товар</label>
+                <input type="radio" id="Notebook" name="category" value="Notebook">
+                <label for="Notebook">Ноутбук</label>
                 <br>
                 <br>
-                <input type="radio" id="appliances" name="category" value="appliances">
-                <label for="appliances">Цифровой продукт</label>
+                <input type="radio" id="Smartphone" name="category" value="Smartphone">
+                <label for="Smartphone">Смартфон</label>
                 <br>
                 <br>
+                <input type="radio" id="Computer" name="category" value="Computer">
+                <label for="Computer">Компьютеры</label>
+                <br>
+                <br>
+
                 <input type="submit" class="w-100 btn btn-lg btn-primary" style="width:150px!important" value="Найти">
             </fieldset>
         </form>

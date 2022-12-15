@@ -12,7 +12,7 @@
     <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet">
 </head>
 <body>
-<div class="general_div">
+<div class="general_div text-white">
     <nav class="navbar navbar-expand-md" style="background-color: #e3f2fd;" aria-label="Fourth navbar example">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"></a>
@@ -20,7 +20,7 @@
                     aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarsExample04">
+            <div class="collapse navbar-collapse text-black" id="navbarsExample04">
                 <ul class="navbar-nav me-auto mb-2 mb-md-0">
                     <li class="nav-item">
                         <a class="nav-link" href="/auth/index1">Главная страница</a>
@@ -38,7 +38,7 @@
             </div>
         </div>
     </nav>
-    <div class="about">
+    <div class="about text-white">
         <form th:method="POST" th:action="@{/product/search}">
             <fieldset>
                 <legend>Выберите параметры для сортировки, поиска, фильтрации</legend>
@@ -68,6 +68,10 @@
                 <br>
                 <input type="radio" id="Smartphone" name="category" value="Smartphone">
                 <label for="Smartphone">Смартфоны</label>
+                <br>
+                <br>
+                <input type="radio" id="Computer" name="category" value="Computer">
+                <label for="Computer">Компьютеры</label>
                 <br>
                 <br>
                 <input type="submit" class="w-100 btn btn-lg btn-primary" style="width:150px!important" value="Найти">

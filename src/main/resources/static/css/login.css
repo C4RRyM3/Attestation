@@ -1,5 +1,5 @@
 body {
-    background: white;
+    background: white url("../img/background.jpg");
 }
 #form_login {
     background: #868686;
@@ -10,7 +10,7 @@ body {
     height: 440px;
 }
 #form_login h1 {
-    color: black;
+    color: #ffffff;
     font: bold 25px Arial;
 }
 #form_login input[type="text"],
